@@ -17,4 +17,11 @@ class MainActivity : BleActivity() {
     fun change(view: View){
 //        GoScanner(f1(),10,R.id.frage,"f1")
 }
+     override fun LoadingUI(a:String, pass:Int){
+ShowDaiLog(R.layout.bleloading,false,false)
+     }
+
+    override fun LoadingSuccessUI(){
+        DaiLogDismiss()
+    }
 }
